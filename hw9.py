@@ -23,8 +23,8 @@ class rectangle:
 
     def show(self):
 
-        print(f'좌측 상단 꼭지점: ({self.lt.x}, {self.lt.y})')
-        print(f'우측 하단 꼭지점: ({self.rb.x}, {self.rb.y})')
+        print(f'좌측 상단 꼭짓점: ({self.lt.x}, {self.lt.y})')
+        print(f'우측 하단 꼭짓점: ({self.rb.x}, {self.rb.y})')
 
     def getwidth(self):
 
