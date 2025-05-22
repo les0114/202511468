@@ -1,5 +1,5 @@
 
-class Point:
+class point:
     def __init__(self, x=0, y=0):  
         self.x = x
         self.y = y
@@ -15,44 +15,44 @@ class Point:
         return (self.x, self.y)
 
 
-class Rectangle:
+class rectangle:
     def __init__(self, x1, y1, x2, y2):
         
-        self.lt = Point(x1, y1)  
-        self.rb = Point(x2, y2)  
+        self.lt = point(x1, y1)  
+        self.rb = point(x2, y2)  
 
     def show(self):
 
         print(f'좌측 상단 꼭지점: ({self.lt.x}, {self.lt.y})')
         print(f'우측 하단 꼭지점: ({self.rb.x}, {self.rb.y})')
 
-    def getWidth(self):
+    def getwidth(self):
 
         return self.rb.x - self.lt.x
 
-    def getHeight(self):
+    def getheight(self):
 
         return self.rb.y - self.lt.y
 
-    def getArea(self):
+    def getarea(self):
         
-        return self.getWidth() * self.getHeight()
+        return self.getwidth() * self.getheight()
 
-    def getPerimeter(self):
+    def getperimeter(self):
         
-        return 2 * (self.getWidth() + self.getHeight())
+        return 2 * (self.getwidth() + self.getheight())
 
 
 
 
 if __name__ == '__main__':
     
-    r1 = Rectangle(5, 5, 20, 10)
+    r1 = rectangle(5, 5, 20, 10)
 
 
     
-    a = r1.getArea()
-    p = r1.getPerimeter()
+    a = r1.getarea()
+    p = r1.getperimeter()
 
     
     r1.show()
